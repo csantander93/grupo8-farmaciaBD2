@@ -1,4 +1,4 @@
-package com.proyectofarmaciaBD2.testMain;
+package com.proyectofarmaciaBD2.testMain.consultas;
 
 import com.mongodb.client.FindIterable;
 import com.mongodb.client.MongoCollection;

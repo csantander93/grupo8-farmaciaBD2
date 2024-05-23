@@ -14,8 +14,6 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Setter
 public class ObraSocial {
 
-    @Id
-    private int id;
     private String nombre;
 
 }

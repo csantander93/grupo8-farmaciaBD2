@@ -16,8 +16,7 @@ import java.util.List;
 @Setter
 public class Sucursal {
 
-    @Id
-    private int id;
+
     private Domicilio domicilio;
     private List<Empleado> empleados;
     private Empleado encargado;

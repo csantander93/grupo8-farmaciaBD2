@@ -6,7 +6,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import java.util.Date;
+import java.time.LocalDate;
 import java.util.List;
 
 @Document(value = "venta")
@@ -15,9 +15,9 @@ import java.util.List;
 @Getter
 @Setter
 public class Venta {
-    private int id;
+
     private String numeroTicket;
-    private Date fecha;
+    private LocalDate fecha;
     private double total;
     private String formaPago; // Efectivo, Tarjeta o Débito
     private List<ProductoVendido> productos;

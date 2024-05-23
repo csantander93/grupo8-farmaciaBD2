@@ -10,8 +10,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Getter
 @Setter
 public class Domicilio {
-    @Id
-    private long id;
+
     private String calle;
     private int numero;
     private String localidad;

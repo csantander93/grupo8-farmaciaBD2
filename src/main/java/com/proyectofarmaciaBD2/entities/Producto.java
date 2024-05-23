@@ -13,8 +13,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Getter
 @Setter
 public class Producto {
-    @Id
-    private int id;
+
     private String descripcion;
     private String tipo; // Medicamento o Perfumería
     private String laboratorio;

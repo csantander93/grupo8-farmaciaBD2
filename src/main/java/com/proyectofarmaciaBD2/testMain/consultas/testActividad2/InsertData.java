@@ -1,4 +1,4 @@
-package com.proyectofarmaciaBD2.testMain;
+package com.proyectofarmaciaBD2.testMain.consultas.testActividad2;
 
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;

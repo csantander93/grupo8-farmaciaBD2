@@ -16,7 +16,7 @@ import java.util.List;
 @Setter
 public class Sucursal {
 
-
+    private String nombreSucursal;
     private Domicilio domicilio;
     private List<Empleado> empleados;
     private Empleado encargado;

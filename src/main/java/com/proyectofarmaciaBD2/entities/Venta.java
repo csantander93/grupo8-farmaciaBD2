@@ -23,5 +23,6 @@ public class Venta {
     private List<ProductoVendido> productos;
     private Empleado empleadoAtendio;
     private Empleado empleadoCobro;
+    private Cliente cliente;
 
 }

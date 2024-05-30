@@ -24,5 +24,6 @@ public class Venta {
     private Empleado empleadoAtendio;
     private Empleado empleadoCobro;
     private Cliente cliente;
+    private Sucursal sucursal;
 
 }

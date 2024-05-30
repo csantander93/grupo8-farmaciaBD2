@@ -47,21 +47,27 @@ public class InsertData {
         ProductoVendido productoVendido3 = new ProductoVendido(producto3, 3, 5.0, 15.0);
         ProductoVendido productoVendido4 = new ProductoVendido(producto4, 4, 2.0, 8.0);
 
-        // Crear ventas
-        Venta venta1 = new Venta("0001-00000123", LocalDate.now(), 35.0, "Efectivo", Arrays.asList(productoVendido1, productoVendido2), vendedor1, cajero1, cliente);
-        Venta venta2 = new Venta("0001-00000124", LocalDate.now(), 23.0, "Tarjeta", Arrays.asList(productoVendido3, productoVendido4), vendedor1, cajero1, cliente);
-        Venta venta3 = new Venta("0001-00000125", LocalDate.now(), 28.0, "Efectivo", Arrays.asList(productoVendido1, productoVendido3), vendedor1, cajero1, cliente);
-        Venta venta4 = new Venta("0001-00000126", LocalDate.now(), 10.0, "Tarjeta", Arrays.asList(productoVendido4), vendedor1, cajero1, cliente);
-        Venta venta5 = new Venta("0001-00000127", LocalDate.now(), 45.0, "Efectivo", Arrays.asList(productoVendido2, productoVendido3, productoVendido4), vendedor1, cajero1, cliente);
-        Venta venta6 = new Venta("0001-00000128", LocalDate.now(), 20.0, "Tarjeta", Arrays.asList(productoVendido1), vendedor1, cajero1, cliente);
-        Venta venta7 = new Venta("0001-00000129", LocalDate.now(), 60.0, "Efectivo", Arrays.asList(productoVendido2, productoVendido3), vendedor1, cajero1, cliente);
-        Venta venta8 = new Venta("0001-00000130", LocalDate.now(), 18.0, "Tarjeta", Arrays.asList(productoVendido4, productoVendido1), vendedor1, cajero1, cliente);
-        Venta venta9 = new Venta("0001-00000131", LocalDate.now(), 35.0, "Efectivo", Arrays.asList(productoVendido1, productoVendido2), vendedor1, cajero1, cliente);
-        Venta venta10 = new Venta("0001-00000132", LocalDate.now(), 23.0, "Tarjeta", Arrays.asList(productoVendido3, productoVendido4), vendedor1, cajero1, cliente);
-
         // Crear una sucursal
         Sucursal sucursal1 = new Sucursal("sucursal1", domicilioSucursal1, Arrays.asList(cajero1, vendedor1), cajero1);
         Sucursal sucursal2 = new Sucursal("sucursal2", domicilioSucursal2, Arrays.asList(cajero2, vendedor2), vendedor2);
+
+        // Crear ventas
+        Venta venta1 = new Venta("0001-00000123", LocalDate.of(2024, 5, 5), 35.0, "Efectivo", Arrays.asList(productoVendido1, productoVendido2), vendedor1, cajero1, cliente, sucursal1);
+        Venta venta2 = new Venta("0001-00000124", LocalDate.of(2024, 5, 5), 23.0, "Tarjeta", Arrays.asList(productoVendido3, productoVendido4), vendedor1, cajero1, cliente, sucursal1);
+        Venta venta3 = new Venta("0001-00000125", LocalDate.of(2024, 5, 5), 28.0, "Efectivo", Arrays.asList(productoVendido1, productoVendido3), vendedor1, cajero1, cliente, sucursal1);
+        Venta venta4 = new Venta("0001-00000126", LocalDate.of(2024, 5, 5), 10.0, "Tarjeta", Arrays.asList(productoVendido4), vendedor1, cajero1, cliente, sucursal1);
+        Venta venta5 = new Venta("0001-00000127", LocalDate.of(2024, 5, 7), 45.0, "Efectivo", Arrays.asList(productoVendido2, productoVendido3, productoVendido4), vendedor1, cajero1, cliente, sucursal1);
+        Venta venta6 = new Venta("0001-00000128", LocalDate.now(), 20.0, "Tarjeta", Arrays.asList(productoVendido1), vendedor1, cajero1, cliente, sucursal1);
+        Venta venta7 = new Venta("0001-00000129", LocalDate.of(2024, 5, 5), 60.0, "Efectivo", Arrays.asList(productoVendido2, productoVendido3), vendedor1, cajero1, cliente, sucursal1);
+        Venta venta8 = new Venta("0001-00000130", LocalDate.of(2024, 5, 7), 18.0, "Tarjeta", Arrays.asList(productoVendido4, productoVendido1), vendedor1, cajero1, cliente, sucursal1);
+        Venta venta9 = new Venta("0001-00000131", LocalDate.of(2024, 5, 7), 35.0, "Efectivo", Arrays.asList(productoVendido1, productoVendido2), vendedor1, cajero1, cliente, sucursal1);
+        Venta venta10 = new Venta("0001-00000132", LocalDate.of(2024, 5, 7), 23.0, "Tarjeta", Arrays.asList(productoVendido3, productoVendido4), vendedor1, cajero1, cliente, sucursal1);
+
+        Venta venta11 = new Venta("0001-00000128", LocalDate.now(), 20.0, "Tarjeta", Arrays.asList(productoVendido1), vendedor1, cajero1, cliente, sucursal2);
+        Venta venta12 = new Venta("0001-00000129", LocalDate.of(2024, 5, 7), 60.0, "Efectivo", Arrays.asList(productoVendido2, productoVendido3), vendedor1, cajero1, cliente, sucursal2);
+        Venta venta13 = new Venta("0001-00000130", LocalDate.now(), 18.0, "Tarjeta", Arrays.asList(productoVendido4, productoVendido1), vendedor1, cajero1, cliente, sucursal2);
+        Venta venta14 = new Venta("0001-00000131", LocalDate.now(), 35.0, "Efectivo", Arrays.asList(productoVendido1, productoVendido2), vendedor1, cajero1, cliente, sucursal2);
+        Venta venta15 = new Venta("0001-00000132", LocalDate.of(2024, 5, 7), 23.0, "Tarjeta", Arrays.asList(productoVendido3, productoVendido4), vendedor1, cajero1, cliente, sucursal2);
 
         // Insertar documentos en MongoDB
         MongoCollection<Document> clientesCollection = database.getCollection("clientes");
@@ -224,7 +230,76 @@ public class InsertData {
                                     .append("provincia", venta1.getCliente().getDomicilio().getProvincia()))
                             .append("obraSocial", new Document()
                                     .append("nombre", venta1.getCliente().getObraSocial().getNombre()))
-                            .append("numeroAfiliado", venta1.getCliente().getNumeroAfiliado())));
+                            .append("numeroAfiliado", venta1.getCliente().getNumeroAfiliado()))
+                            .append("sucursal", new Document()
+                                            .append("nombreSucursal", venta.getSucursal().getNombreSucursal())));
+        }
+
+        for (Venta venta : Arrays.asList(venta11, venta12, venta13, venta14, venta15)) {
+            ventasCollection.insertOne(new Document()
+                    .append("numeroTicket", venta.getNumeroTicket())
+                    .append("fecha", venta.getFecha())
+                    .append("total", venta.getTotal())
+                    .append("formaPago", venta.getFormaPago())
+                    .append("productos", Arrays.asList(
+                            new Document()
+                                    .append("producto", new Document()
+                                            .append("descripcion", producto1.getDescripcion())
+                                            .append("tipo", producto1.getTipo())
+                                            .append("laboratorio", producto1.getLaboratorio())
+                                            .append("precio", producto1.getPrecio()))
+                                    .append("cantidad", productoVendido1.getCantidad())
+                                    .append("precioUnitario", productoVendido1.getPrecioUnitario())
+                                    .append("total", productoVendido1.getTotal()),
+                            new Document()
+                                    .append("producto", new Document()
+                                            .append("descripcion", producto2.getDescripcion())
+                                            .append("tipo", producto2.getTipo())
+                                            .append("laboratorio", producto2.getLaboratorio())
+                                            .append("precio", producto2.getPrecio()))
+                                    .append("cantidad", productoVendido2.getCantidad())
+                                    .append("precioUnitario", productoVendido2.getPrecioUnitario())
+                                    .append("total", productoVendido2.getTotal())))
+                    .append("empleadoAtendio", new Document()
+                            .append("apellido", vendedor1.getApellido())
+                            .append("nombre", vendedor1.getNombre())
+                            .append("dni", vendedor1.getDni())
+                            .append("cuil", vendedor1.getCuil())
+                            .append("domicilio", new Document()
+                                    .append("calle", vendedor1.getDomicilio().getCalle())
+                                    .append("numero", vendedor1.getDomicilio().getNumero())
+                                    .append("localidad", vendedor1.getDomicilio().getLocalidad())
+                                    .append("provincia", vendedor1.getDomicilio().getProvincia()))
+                            .append("obraSocial", new Document()
+                                    .append("nombre", vendedor1.getObraSocial().getNombre()))
+                            .append("numeroAfiliado", vendedor1.getNumeroAfiliado()))
+                    .append("empleadoCobro", new Document()
+                            .append("apellido", cajero1.getApellido())
+                            .append("nombre", cajero1.getNombre())
+                            .append("dni", cajero1.getDni())
+                            .append("cuil", cajero1.getCuil())
+                            .append("domicilio", new Document()
+                                    .append("calle", cajero1.getDomicilio().getCalle())
+                                    .append("numero", cajero1.getDomicilio().getNumero())
+                                    .append("localidad", cajero1.getDomicilio().getLocalidad())
+                                    .append("provincia", cajero1.getDomicilio().getProvincia()))
+                            .append("obraSocial", new Document()
+                                    .append("nombre", cajero1.getObraSocial().getNombre()))
+                            .append("numeroAfiliado", cajero1.getNumeroAfiliado()))
+                    .append("cliente", new Document()
+                            .append("apellido", venta1.getCliente().getApellido())
+                            .append("nombre", venta1.getCliente().getNombre())
+                            .append("dni", venta1.getCliente().getDni())
+                            .append("domicilio", new Document()
+                                    .append("calle", venta1.getCliente().getDomicilio().getCalle())
+                                    .append("numero", venta1.getCliente().getDomicilio().getNumero())
+                                    .append("localidad", venta1.getCliente().getDomicilio().getLocalidad())
+                                    .append("provincia", venta1.getCliente().getDomicilio().getProvincia()))
+                            .append("obraSocial", new Document()
+                                    .append("nombre", venta1.getCliente().getObraSocial().getNombre()))
+                            .append("numeroAfiliado", venta1.getCliente().getNumeroAfiliado()))
+                    .append("sucursal", new Document()
+                            .append("nombreSucursal", venta.getSucursal().getNombreSucursal())));
         }
 
         MongoCollection<Document> sucursalesCollection = database.getCollection("sucursales");
